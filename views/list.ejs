@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Users</title>
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <br>
+            <div class="">
+                <div class="text-center">
+                    <h3 class="d-inline float-none">Profile</h3>
+                </div>
+            </div>
+            <br>
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% for(let x of arr) { %>
+                    <tr>
+                        <td><%= x.name %></td>
+                        <td><%= x.email %></td>
+                        <td><%= x.phone %></td>
+                        <td><%= x.address %></td>
+                    </tr>
+                    <% } %>
+                </tbody>
+            </table>
+        </div>
+    </body>
+    <script src="/js/bootstrap.js" charset="utf-8"></script>
+</html>
